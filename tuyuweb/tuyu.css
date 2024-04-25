@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  height: 1000px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(235, 205, 255, 1);
+  height: 12vh;
+  width: 100vw;
+  position: fixed;
+}
+
+ol li {
+  list-style-type: none;
+  color: blue;
+  display: inline;
+}
+
+.svgcolor {
+  filter: invert(99%) sepia(45%) saturate(8%) hue-rotate(166deg)
+    brightness(117%) contrast(88%);
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.svgborder {
+  border: 10px solid black;
+  display: inline-block;
+}
