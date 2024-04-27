@@ -8,3 +8,7 @@ Current plans:
 4. BETTER COLOR SCHEMES
 5. FINISHING TOUCHES
 6. UPLOAD ON GIT
+7. After Im done with the chatroom ill see what I can do
+
+apperantly I was using em vh vw all at the same time so on my next project ill be using vw only
+also make sure to make this responsive to all future me :/

@@ -1,21 +1,31 @@
 @font-face {
-    font-family: tuyufont;
-    src: url('../Resources/fontaines1/HOMOARAK.TTF');
+  font-family: tuyufont;
+  src: url("../Resources/fontaines1/HOMOARAK.TTF");
 }
 
+@font-face {
+  font-family: moon;
+  src: url("../Resources/fontaines1/JetBrainsMono-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: rain;
+  src: url("../Resources/fontaines1/Hiragino\ Kaku\ Gothic\ ProN\ W6.otf");
+}
 
 body {
   background-color: white;
-  height: 1000px;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: rgba(235, 205, 255, 1);
+  background-color: rgba(210, 156, 247, 0.5);
   height: 12vh;
   width: 100vw;
   position: fixed;
+  z-index: 1;
 }
 
 ol li {
@@ -27,24 +37,118 @@ ol li {
 .svgcolor {
   filter: invert(99%) sepia(45%) saturate(8%) hue-rotate(166deg)
     brightness(117%) contrast(88%);
-  width: 2.5em;
-  height: 2.5em;
-}
-
-.svgborder {
-  border: 10px solid black;
-  display: inline-block;
+  width: 2.8em;
+  height: 2.8em;
+  padding: 0.3em;
 }
 
 .svgcolor:hover {
   filter: invert(99%) sepia(45%) saturate(8%) hue-rotate(166deg) brightness(92%); /* found that whenever changing a white svg into grey when hovered change the brightness element */
 }
 
-h1 {
-  color: black;
+#f1 {
+  color: lightcyan;
+  position: absolute;
+  font-family: moon;
+  transform: translate(-50%, -50%);
+  left: 16%;
+  top: 20%;
+}
+
+#f2 {
+  color: white;
+  position: absolute;
+  top: 26%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-family: rain;
+}
+
+#socials {
+  float: right;
+  margin-left: 200px;
+  margin-right: 50px;
+}
+
+.separator {
+  font-size: 1.3em;
+}
+
+#lcontainer {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 4%;
+  filter: invert(99%) sepia(45%) saturate(8%) hue-rotate(166deg)
+    brightness(117%) contrast(88%);
   transform: translate(-50%, -50%);
-  font-family: tuyufont;
+  border: 0.2em solid black;
+  padding: 3px;
+}
+
+#logo {
+  width: 3em;
+  height: 3em;
+}
+
+#parent {
+  background-color: #330055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  /* background was from "https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/" */
+  height: 65vh;
+  width: 100%;
+  float: left;
+  display: flex;
+}
+
+#f3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-family: moon;
+  text-align: center;
+}
+
+#f4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-family: moon;
+  text-align: center;
+}
+
+#photocontainer {
+  background-color: rgba(229, 220, 251, 255);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+#f5 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  font-family: rain;
+  color: rgba(210, 156, 247, 1);
+}
+
+#gh {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+}
+
+#ghchild {
+  color: white;
+  font-family: moon;
+  font-size: 1em;
 }
